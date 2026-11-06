@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172b2a">
+  <meta name="description" content="Andreia Alexandre — Psicanalista Clínica, Pastora, Mentora e Palestrante. Acolhimento, fé e transformação.">
+  <title>Andreia Alexandre | Psicanalista • Pastora • Mentora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#172b2a;--green:#24413b;--gold:#c7a36a;--cream:#f7f4ee;--paper:#fffdfa;--muted:#68736d;--rust:#a65c45}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1140px,calc(100% - 44px));margin:auto}
+    .topbar{background:var(--ink);color:#e9e5dc;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+    .topbar .wrap{display:flex;justify-content:space-between;gap:18px;padding:10px 0}
+    header{background:rgba(255,253,250,.94);position:sticky;top:0;z-index:10;border-bottom:1px solid #e8e1d6;backdrop-filter:blur(12px)}
+    nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-family:"Playfair Display",serif;font-size:25px;font-weight:700;letter-spacing:-.03em}.brand span{color:var(--rust)}
+    .navlinks{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600;color:#47534d}
+    .navlinks a:hover{color:var(--rust)}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:3px;padding:13px 21px;font-weight:700;font-size:14px;transition:.2s}
+    .btn-gold{background:var(--gold);color:#182b29}.btn-gold:hover{background:#d7b77f;transform:translateY(-2px)}
+    .btn-outline{border:1px solid rgba(255,255,255,.5);color:#fff}.btn-outline:hover{background:#fff;color:var(--ink)}
+    .hero{background:var(--ink);color:white;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:560px;height:560px;border:1px solid rgba(199,163,106,.2);border-radius:50%;right:-180px;top:-210px;box-shadow:0 0 0 55px rgba(199,163,106,.035),0 0 0 110px rgba(199,163,106,.025)}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:56px;min-height:610px;padding:66px 0;position:relative;z-index:1}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700}
+    h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.12;font-weight:600}
+    h1{font-size:clamp(43px,5.2vw,68px);margin:18px 0 20px;letter-spacing:-.035em}
+    .hero p{font-size:18px;color:#d9dfd9;max-width:560px;margin:0 0 30px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}.hero-photo{position:relative;max-width:440px;justify-self:end}
+    .hero-photo img{width:100%;height:510px;object-fit:cover;object-position:center 20%;display:block;border-radius:2px;position:relative;z-index:1}
+    .hero-photo:before{content:"";position:absolute;inset:20px -20px -20px 20px;border:1px solid var(--gold);z-index:0}
+    .photo-caption{position:absolute;bottom:22px;left:-30px;background:var(--paper);color:var(--ink);padding:15px 20px;z-index:2;max-width:225px;box-shadow:0 12px 35px #0002}
+    .photo-caption strong{font-family:"Playfair Display",serif;font-size:19px;display:block}.photo-caption small{color:var(--muted)}
+    section{padding:92px 0}.section-head{max-width:700px;margin-bottom:42px}.section-head h2{font-size:clamp(34px,4vw,48px);margin:12px 0 16px}.section-head p{color:var(--muted);font-size:17px}
+    .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}
+    .about-image{position:relative}.about-image img{width:100%;height:490px;object-fit:cover;object-position:center 25%;display:block}
+    .about-image:after{content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--gold);z-index:-1}
+    .about-copy h2{font-size:43px;margin:10px 0 20px}.about-copy p{color:#58635d;font-size:16px}
+    .quote{border-left:3px solid var(--rust);padding:4px 0 4px 22px;margin:26px 0;color:var(--ink);font-family:"Playfair Display",serif;font-size:23px;line-height:1.4}
+    .pillars{background:#ebe8df}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{background:var(--paper);padding:27px 23px;min-height:190px;border-top:3px solid var(--gold)}
+    .card .num{font-size:12px;color:var(--rust);font-weight:700;letter-spacing:.15em}.card h3{font-size:23px;margin:18px 0 9px}.card p{font-size:14px;color:var(--muted);margin:0}
+    .story{background:var(--green);color:white}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .story h2{font-size:clamp(35px,4vw,49px);margin:13px 0 20px}.story p{color:#dce4dd}.story-note{font-family:"Playfair Display",serif;font-size:25px;color:#f1d9b2!important;line-height:1.4}
+    .story-box{border:1px solid rgba(199,163,106,.5);padding:36px}.story-box p{margin:0}
+    .video{background:var(--paper)}.video-card{display:grid;grid-template-columns:1.1fr .9fr;background:var(--ink);color:white;overflow:hidden}
+    .video-thumb{position:relative;min-height:340px}.video-thumb img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
+    .play{position:absolute;inset:0;display:grid;place-items:center;background:#101b1a35}.play span{width:76px;height:76px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:var(--ink);font-size:26px;padding-left:4px;box-shadow:0 8px 25px #0004}
+    .video-copy{padding:42px;align-self:center}.video-copy h2{font-size:35px;margin:12px 0}.video-copy p{color:#d5ddd7}.video-copy .btn{margin-top:14px}
+    .contact{background:#ebe8df}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.contact h2{font-size:45px;margin:12px 0 18px}.contact p{color:var(--muted)}
+    .contact-links{display:grid;gap:12px}.contact-link{display:flex;justify-content:space-between;align-items:center;background:var(--paper);padding:18px 21px;border:1px solid #e3ddd2;font-weight:700}.contact-link span:last-child{color:var(--rust);font-size:13px}
+    footer{background:#132321;color:#d8ded8;padding:28px 0;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{font-family:"Playfair Display",serif;font-size:19px;color:white}
+    .disclaimer{font-size:12px;color:#9eaaa2;margin-top:18px}
+    @media(max-width:850px){.navlinks{display:none}.hero-grid,.about-grid,.story-grid,.video-card,.contact-grid{grid-template-columns:1fr}.hero-grid{gap:48px;padding:60px 0}.hero-photo{justify-self:center;width:min(90%,440px)}.hero-photo img{height:460px}.about-grid{gap:38px}.about-image{max-width:480px}.cards{grid-template-columns:repeat(2,1fr)}.video-thumb{min-height:290px}.video-copy{padding:32px}}
+    @media(max-width:520px){.wrap{width:min(100% - 32px,1140px)}.topbar .wrap{justify-content:center;text-align:center}.topbar .wrap span:last-child{display:none}nav{min-height:68px}.brand{font-size:22px}.hero-grid{min-height:auto}.hero p{font-size:16px}.hero-photo img{height:400px}.photo-caption{left:-10px;bottom:14px}.cards{grid-template-columns:1fr}.card{min-height:150px}section{padding:68px 0}.about-copy h2,.contact h2{font-size:36px}.story-box{padding:25px}.video-copy h2{font-size:30px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>Escuta • Fé • Propósito</span><span>Um espaço para acolher histórias e despertar possibilidades</span></div></div>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#inicio">Andreia <span>Alexandre</span></a>
+      <div class="navlinks"><a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#historia">Minha história</a><a href="#videos">Vídeos</a></div>
+      <a class="btn btn-gold" href="https://api.whatsapp.com/send?phone=5513974027095" target="_blank" rel="noopener">Fale comigo</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Psicanalista Clínica • Pastora • Mentora • Palestrante</div>
+          <h1>Há força em cada história. Há novos caminhos possíveis.</h1>
+          <p>Um convite ao acolhimento, ao autoconhecimento e à transformação — com escuta, propósito e fé.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="https://api.whatsapp.com/send?phone=5513974027095" target="_blank" rel="noopener">Conversar pelo WhatsApp ↗</a>
+            <a class="btn btn-outline" href="#sobre">Conheça minha história</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/andreia-retrato.jpg" alt="Andreia Alexandre sorrindo, em pé, diante de um jardim vertical">
+          <div class="photo-caption"><strong>Andreia Alexandre</strong><small>Escuta, cuidado e propósito.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="wrap about-grid">
+        <div class="about-image"><img src="assets/andreia-perfil.jpg" alt="Retrato de Andreia Alexandre"></div>
+        <div class="about-copy">
+          <div class="eyebrow">Quem sou</div>
+          <h2>Uma trajetória que transforma vivências em propósito.</h2>
+          <p>Sou Andreia Alexandre: psicanalista clínica, pastora, mentora e palestrante. Acredito na importância de um espaço de escuta respeitosa, onde cada pessoa possa olhar para sua própria história, reconhecer seus recursos e construir novos sentidos para sua caminhada.</p>
+          <p>Minha própria trajetória inclui uma experiência marcante de superação do câncer. Essa vivência faz parte da minha história e fortalece meu compromisso com a esperança, a coragem e o valor de cada novo começo.</p>
+          <div class="quote">“A sua história não termina no capítulo mais difícil. Ainda há caminhos a descobrir.”</div>
+          <a class="btn btn-gold" href="https://www.instagram.com/andreia.psicanalistaa/" target="_blank" rel="noopener">Acompanhe no Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pillars" id="atuacao">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Como posso contribuir</div>
+          <h2>Quatro dimensões de cuidado e desenvolvimento.</h2>
+          <p>Atuação que integra escuta clínica, espiritualidade, orientação e comunicação para diferentes momentos e públicos.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="num">01 / CLÍNICA</div><h3>Psicanálise</h3><p>Um espaço de escuta e reflexão para explorar questões emocionais e ampliar o autoconhecimento.</p></article>
+          <article class="card"><div class="num">02 / FÉ</div><h3>Pastoral</h3><p>Palavra, acolhimento e fé como parte de uma caminhada de sentido e fortalecimento espiritual.</p></article>
+          <article class="card"><div class="num">03 / CAMINHO</div><h3>Mentoria</h3><p>Acompanhamento e reflexão para reconhecer possibilidades, organizar objetivos e avançar com propósito.</p></article>
+          <article class="card"><div class="num">04 / VOZ</div><h3>Palestras</h3><p>Encontros e mensagens sobre superação, fé, propósito, relações humanas e transformação.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="historia">
+      <div class="wrap story-grid">
+        <div>
+          <div class="eyebrow">Força para recomeçar</div>
+          <h2>Superar também é descobrir uma nova forma de caminhar.</h2>
+          <p>Enfrentar o câncer foi um capítulo importante da minha vida. Não resumo minha história a essa experiência, mas reconheço a força, a fé e os aprendizados que nasceram ao atravessá-la.</p>
+          <p>Hoje, compartilho minha caminhada com sensibilidade e responsabilidade, para lembrar que ninguém precisa ser definido apenas pelos desafios que enfrentou.</p>
+        </div>
+        <div class="story-box">
+          <p class="story-note">“Coragem não é nunca sentir medo. É seguir em frente, mesmo quando o caminho exige força.”</p>
+          <p style="margin-top:22px">Cada pessoa tem seu próprio tempo, sua própria história e suas próprias possibilidades. O acolhimento começa pelo respeito a essa singularidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" id="videos">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Reflexões em vídeo</div>
+          <h2>Uma mensagem para assistir e refletir.</h2>
+          <p>Conteúdos sobre fé, comportamento, relações e vida cotidiana no canal de Andreia Alexandre.</p>
+        </div>
+        <div class="video-card">
+          <a class="video-thumb" href="https://www.youtube.com/@andreiapsicanalistaa" target="_blank" rel="noopener" aria-label="Abrir canal de Andreia Alexandre no YouTube">
+            <img src="assets/andreia-video.jpg" alt="Andreia Alexandre em um vídeo sobre fé e reflexão">
+            <div class="play"><span>▶</span></div>
+          </a>
+          <div class="video-copy">
+            <div class="eyebrow">Destaque do canal</div>
+            <h2>“Você está tentando manipular Deus.”</h2>
+            <p>Uma chamada para refletir sobre fé, intenção e a maneira como nos relacionamos com aquilo em que acreditamos.</p>
+            <a class="btn btn-gold" href="https://www.youtube.com/@andreiapsicanalistaa" target="_blank" rel="noopener">Assistir no canal ↗</a>
+            <p class="disclaimer">O destaque utiliza a imagem enviada como referência visual e direciona ao canal oficial. O link individual do vídeo ainda precisa ser confirmado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="eyebrow">Vamos conversar</div>
+          <h2>O primeiro passo pode ser uma conversa.</h2>
+          <p>Para informações sobre atendimentos, mentorias, convites para palestras e conteúdos, entre em contato pelos canais oficiais.</p>
+          <a class="btn btn-gold" href="https://api.whatsapp.com/send?phone=5513974027095" target="_blank" rel="noopener">Chamar no WhatsApp ↗</a>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link" href="https://api.whatsapp.com/send?phone=5513974027095" target="_blank" rel="noopener"><span>WhatsApp</span><span>+55 13 97402-7095 ↗</span></a>
+          <a class="contact-link" href="https://www.instagram.com/andreia.psicanalistaa/" target="_blank" rel="noopener"><span>Instagram</span><span>@andreia.psicanalistaa ↗</span></a>
+          <a class="contact-link" href="https://www.youtube.com/@andreiapsicanalistaa" target="_blank" rel="noopener"><span>YouTube</span><span>Canal oficial ↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-row"><div class="footer-brand">Andreia Alexandre</div><div>Psicanalista Clínica • Pastora • Mentora • Palestrante</div><div>© 2026 — Todos os direitos reservados</div></div>
+      <div class="disclaimer">Este site tem caráter informativo e institucional. A descrição profissional e os serviços devem ser conferidos e complementados pela própria profissional antes da publicação.</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+SITE — ANDREIA ALEXANDRE
+========================
+
+Conteúdo:
+- index.html: página institucional responsiva
+- assets/: três imagens enviadas para o projeto
+
+Como visualizar:
+1. Extraia o arquivo ZIP.
+2. Abra a pasta andreia_alexandre_site.
+3. Dê dois cliques em index.html.
+
+Como publicar:
+Envie o index.html e a pasta assets para a hospedagem, mantendo a estrutura de pastas.
+
+Observação sobre o vídeo:
+A página destaca o tema “Você está tentando manipular Deus”, usando a imagem enviada,
+e leva ao canal oficial do YouTube. O endereço individual do vídeo não foi confirmado;
+substitua o link do canal pelo link direto do vídeo quando ele for informado.
